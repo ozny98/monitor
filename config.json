@@ -1,0 +1,52 @@
+{
+    "apprise_conf": {
+        "workspace": "AADAw8arDo",
+        "key": "AIzaSyDdDAWdwahCZtE6vySjMm-WEfRq3CPzqKqqsHI",
+        "token": "VyICiX6fHdawdawUnCh1cI8vRGT6OKIfRLPsHpRsRX020g"
+    },
+
+    "disk":{
+        "threshold": 80
+
+    },
+    "ram":{
+        "threshold": 5,
+        "available":{
+                "threshold": 3
+        }
+    },
+    "network_svc":{
+        "services":[{
+                "to_delete":"da inserire in services senza questo campo",
+                "host":"127.0.0.1",
+                "port":22,
+                "description":"SSH"
+        }],
+        "example":{
+                "to_delete":"da inserire in services senza questo campo",
+                "host":"127.0.0.1",
+                "port":22,
+                "description":"SSH"
+        }
+    },
+    "web_svc":{
+        "endpoints":[
+            
+		"url":"http://qlodicane.it",{
+                "method":"GET",
+                "description":"QLODICANE - AMZONS"
+            }
+        ],
+        "example":{
+            "to_delete":"da inserire in web_svc senza questo campo",
+            
+	    "url":"http://qlodicane.it",{
+	    "method":"GET",
+            "description":"QLODICANE - AMAZON",
+            "verify":false,
+            "cert":"./server.crt",
+            "key":"./server.key"
+        }
+    }
+
+}
